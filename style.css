@@ -1,0 +1,205 @@
+*{ /*/Encriptador - 1Desktop/*/
+    background: #F3F5FC; 
+    font-family: 'Inter';
+    font-weight: 200px;
+    font-size: 20px;
+    line-height: 100%;
+}
+.logo{ /*/Logo letra "a"/*/
+    width: 5%;
+    padding-top: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.logo:hover{
+    transform: scale(1.5);
+    
+
+}
+.titulo{
+    font-family: 'Inter';
+    padding-left: 215px;
+    font-size:25px;
+    color: #0A3871;
+}
+main{ /*/Separaremos las secciones /¨*/
+    display: flex; /*/Permite alinear distribucion de espacion en items que estan dentro de la interfaz /¨*/
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+.text-area{ /*/Diseño de "Ingrese el texto..." /¨*/
+    
+    width:500px;
+    height: 400px;
+    padding: 20px;
+    margin:10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid #e1e5ee;
+    color: #0A3871;
+    text-transform: lowercase;/*/dejar texto en minuscula /¨*/
+    resize:none;
+    box-sizing: border-box;
+    transition: all .5s;
+    box-shadow: 5px 5px 5px 2px grey;
+
+}
+.text-area:focus{ 
+    border-color:#0A3871;
+}
+.text-area:hover{ 
+    border-color:#0A3871;
+}
+::placeholder{ /*/pseudoetiqueta; color de texto ingresado/¨*/
+    color:#0A3871; 
+}
+.botones{ 
+    display: flex;
+    margin-top: 10px;
+}
+.btn-encriptar{
+    width: 238px;
+    height: 45px;
+    background-color: #0A3871;
+    border: 1px solid #e1e5ee;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+    box-shadow: 5px 5px 5px 1px grey;
+}
+.btn-encriptar:focus{ 
+    border-color:#0A3871;
+}
+.btn-encriptar:hover{ 
+    border-color:#0A3871;
+}
+.btn-desencriptar{
+    width: 238px;
+    height: 45px;
+    background: #D8DFE8;
+    margin-left: 30px;
+    border: 1px solid #e1e5ee;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    transition: all .5s;
+    box-shadow: 5px 5px 5px 1px grey;
+}
+.btn-desencriptar:hover{
+    border-color:#0A3871;
+}
+.btn-desencriptar:focus{ 
+    border-color:#0A3871;
+}
+.copiar{
+    
+    width: 238px;
+    height: 45px;
+    margin-left: 220px;
+    margin-top: 490px;
+    border: 1px solid #e1e5ee;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    position: absolute;
+    transition: all .5s;
+    box-shadow: 5px 5px 5px 1px grey;
+}
+.copiar:focus{ 
+    border-color:#0A3871;
+}
+.copiar:hover{ 
+    border-color:#0A3871;
+}
+.mensaje{
+    width: 300px;
+    height: 500px;
+    padding: 30px;
+    padding-left: 40px;
+    background: white;
+    background-image:  url(imagenes/Muneco_Frame.JPG);
+    background-repeat: no-repeat;
+    background-position :center;
+    margin-left: 150px;
+    border: 1px solid #e1e5ee;
+    border-radius: 20px;
+    transition: all .5s;
+    color: #0A3871;
+    position: absolute;
+    left: 600px;
+    top:10px;
+    resize:none;
+    box-shadow: 5px 5px 5px 1px grey;
+}
+.mensaje:focus{ 
+    border-color:#0A3871;
+}
+.mensaje:hover{ 
+    border-color:#0A3871;
+}
+.informacion{
+    color: #495057;
+    font-size: 10px;
+    margin-left: 150px;
+}
+footer{
+    color: #495057;
+    font-size: 10px; 
+    margin-left: 270px;
+   
+}
+@media screen and (max-width:480px){
+.logo{
+      width: 25%;
+      margin: 10px;
+      padding-left: 120px;
+}
+.titulo{
+    margin:10px;
+    padding-left: 40px;
+}
+main{ /*/Separaremos las secciones /¨*/
+    display:grid;
+    margin-bottom: 50px;
+    margin-left: 35px;
+}
+.text-area{ 
+    width:300px;
+    margin:10px -15px;
+    padding-left: 45px;
+}
+.informacion{
+    margin-left: 60px;
+}
+.botones{ 
+    display:contents ;
+}
+.btn-encriptar{
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.btn-desencriptar{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.mensaje{
+    display:block;
+    position: static;
+    width:225px;
+    margin:10px -15px ;
+    
+}
+.copiar{
+    margin:1px;
+    margin-left: 15px;
+    
+}
+footer{
+    
+    margin:80px;
+    margin-left: 110px;
+}
+}
